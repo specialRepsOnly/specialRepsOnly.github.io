@@ -1,5 +1,6 @@
+/* General Styles */
 body {
-    background-image: url("hb.jpg");
+    background-image: url("hb.png");
     background-color: rgb(247, 238, 113);
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -53,8 +54,9 @@ button:hover {
     background-color: darkred;
 }
 
+/* Card Styles */
 #card {
-    display: none;
+    display: none; /* Initially hidden */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -73,5 +75,5 @@ button:hover {
 }
 
 .hidden {
-    display: none;
+    display: none; /* Class to hide elements */
 }
