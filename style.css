@@ -79,27 +79,63 @@ body {
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     justify-content: center;
     align-items: center;
-    border: 10px solid white; /* White border for visibility */
+    border: 15px solid #ffeb3b; /* Yellow border */
     z-index: 9999; /* Ensure it sits on top of everything else */
+    transition: all 0.5s ease-in-out; /* Smooth opening transition */
 }
 
 .card-content {
-    background-color: white; /* Card background */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners for inner content */
+    background-color: #ffffff; /* Card background */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners */
     width: 80%; /* Adjust size of inner content */
     max-width: 800px;
-    color: black;
+    color: #333; /* Dark text */
     text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for card appearance */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 #close-card-btn {
-    background-color: red;
+    background-color: #f44336; /* Red color for close button */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+#close-card-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#open-card-btn {
+    background-color: #4caf50; /* Green color for open button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#open-card-btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
