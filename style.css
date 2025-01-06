@@ -1,6 +1,8 @@
 body {
-    background-image: url("hb.png");
-    background-color: rgb(247, 238, 113);
+    background-image: url('hb.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
 
 .head {
