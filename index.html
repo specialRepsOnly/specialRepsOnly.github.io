@@ -2,67 +2,41 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="hb.jpg" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
+    <link rel="icon" type="image/png" href="hb.jpg" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="head">
-        <a target="_blank" href="https://en.wikipedia.org/wiki/Stephen_Hawking">
-            Know more about this Exceptional Person
-        </a>
+
+    <div class="container">
+        <!-- Button to show card -->
+        <button class="show-card-btn" onclick="showCard()">Click to Open Card</button>
     </div>
 
-    <div class="Profile">
-        <img src="hb.jpg" alt="Happy Birthday Image" width="500" height="300">
-    </div>
-
-    <div class="Body">
-        <i>Happy Birthday Dearest Ma!</i>
-    </div>
-
-    <div class="oof">
-        <p>
-            There are a plethora of words I could say here, but none seem enough to express my gratitude. 
-            You’ve always been a shelter in storms and a comforting presence. Despite life's challenges, 
-            I hope you have a beautiful year ahead!
-        </p>
-    </div>
-
-    <div class="button-container">
-        <button id="openCardButton">Click Here for a Surprise</button>
-    </div>
-
-    <!-- Card initially hidden with CSS -->
-    <div id="card" class="hidden">
+    <!-- The Card -->
+    <div id="card" class="card">
         <div class="card-content">
-            <h2>You're Amazing!</h2>
-            <p>
-                Wishing you a day filled with love, laughter, and joy. You're truly one in a million, 
-                and I feel so lucky to celebrate this special day with you. Happy Birthday again!
-            </p>
-            <button id="closeCardButton">Close</button>
+            <h2>Happy Birthday!</h2>
+            <p>Enjoy your special day, full of love and joy!</p>
+            <button class="close-card-btn" onclick="hideCard()">Close Card</button>
         </div>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const openCardButton = document.getElementById("openCardButton");
-            const closeCardButton = document.getElementById("closeCardButton");
-            const card = document.getElementById("card");
+        // Show the card when the button is clicked
+        function showCard() {
+            document.getElementById('card').style.display = 'flex';
+        }
 
-            // Show the card when the button is clicked
-            openCardButton.addEventListener("click", () => {
-                card.style.display = "block"; // Make the card visible
-            });
-
-            // Hide the card when the close button is clicked
-            closeCardButton.addEventListener("click", () => {
-                card.style.display = "none"; // Hide the card
-            });
-        });
+        // Hide the card when the close button is clicked
+        function hideCard() {
+            document.getElementById('card').style.display = 'none';
+        }
     </script>
+
 </body>
 
 </html>
