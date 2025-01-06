@@ -1,79 +1,38 @@
-/* General Styles */
 body {
-    background-image: url("hb.png");
     background-color: rgb(247, 238, 113);
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-.head {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    color: red;
-    margin: 20px 0;
-}
-
-.Profile img {
-    display: block;
-    margin: 20px auto;
-    border: 10px solid black;
-    border-radius: 15px;
-}
-
-.Body {
-    text-align: center;
-    font-size: 36px;
-    color: red;
-}
-
-.oof {
-    text-align: center;
-    font-size: 18px;
-    margin: 20px;
-    color: black;
-}
-
-.button-container {
-    text-align: center;
-    margin: 20px;
-}
-
-button {
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: orangered;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: darkred;
-}
-
-/* Card Styles */
 #card {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed to the screen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white; /* White border for visibility */
+    z-index: 9999; /* Ensure it sits on top of everything else */
 }
 
 .card-content {
+    background-color: white; /* Card background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for inner content */
+    width: 80%; /* Adjust size of inner content */
+    max-width: 800px;
+    color: black;
     text-align: center;
 }
 
-.hidden {
-    display: none; /* Class to hide elements */
+#close-card-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
