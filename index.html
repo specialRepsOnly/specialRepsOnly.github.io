@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <link rel="icon" type="image/png" href="hb.jpg" />
@@ -46,7 +46,23 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const openCardButton = document.getElementById("openCardButton");
+            const closeCardButton = document.getElementById("closeCardButton");
+            const card = document.getElementById("card");
+
+            // Show the card when the button is clicked
+            openCardButton.addEventListener("click", () => {
+                card.style.display = "block"; // Make the card visible
+            });
+
+            // Hide the card when the close button is clicked
+            closeCardButton.addEventListener("click", () => {
+                card.style.display = "none"; // Hide the card
+            });
+        });
+    </script>
 </body>
 
 </html>
