@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
-    <link rel="icon" type="image/png" href="hb.jpg" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <div class="container">
-        <!-- Button to show card -->
-        <button class="show-card-btn" onclick="showCard()">Click to Open Card</button>
-    </div>
-
-    <!-- The Card -->
-    <div id="card" class="card">
-        <div class="card-content">
-            <h2>Happy Birthday!</h2>
-            <p>Enjoy your special day, full of love and joy!</p>
-            <button class="close-card-btn" onclick="hideCard()">Close Card</button>
+        <!-- Masked HBD Text -->
+        <h1 class="masked-text">HAPPY BIRTHDAY,</h1>
+        <h1 class="masked-text">dear MADDIE! </h1>
+        
+        <!-- Button to open card -->
+        <button id="openCardBtn" class="animated-btn">CLICK ME :]</button>
+        
+        <!-- Card/Container -->
+        <div id="card" class="card">
+            <p class="card-message">This is for you, my Maddie</p>
+            <p class="card-message">Meeting you was the best part of my 2024</p>
+            <p class="card-message">Carrying that in 2025, till 18 is magical</p>
+            <p class="card-message">True love always lies in connecting to your soul, and you are that!</p>
+            <p class="card-message">Your birthdate is so divine, almost following a pulchritude of numbers</p>
+            <p class="card-message">You resonate the beauty of being a human</p>
+            <p class="card-message">wether it lies in your looks, intelligence or your ability</p>
+            <p class="card-message">Your choices, emotional reasoning, personality.. everything is unmatched!</p>
+            <p class="card-message">You're also a fucking warrior. Anyone can take inspiration from you</p>
+            <p class="card-message">to understand how resilient and caring someone can be</p>
+            <p class="card-message">I love the fact that you are merely not just a human, but a </p>
+            <p class="card-message">copy of God's divine spirit to me</p>
+            <p class="card-message">Today, gives you your wings of freedom, at 18</p>
+            <p class="card-message">You resonate the beauty of being a human. You're an incredible phenomenon!</p>
+            <p class="card-message">I wish you a Happy Birthday, to my one and only Maddie</p>
+            <p class="card-message">You are destined to reach the best. I love you.</p>
+            <button id="closeCardBtn" class="close-btn">Close</button>
         </div>
     </div>
-
-    <script>
-        // Show the card when the button is clicked
-        function showCard() {
-            document.getElementById('card').style.display = 'flex';
-        }
-
-        // Hide the card when the close button is clicked
-        function hideCard() {
-            document.getElementById('card').style.display = 'none';
-        }
-    </script>
-
+    <script src="main.js"></script>
 </body>
-
 </html>
